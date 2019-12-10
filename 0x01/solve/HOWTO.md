@@ -8,7 +8,7 @@
 -> BNI= (B64) [kt.gy](https://kt.gy/)<br><br>
 
 # Bài 2
-* encode/decode B64<br>
+- encode/decode B64<br>
 ```python
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=~'
 
@@ -67,3 +67,9 @@ def b64_to_ascii(s):
 print(ascii_to_b64('abc'))
 print(b64_to_ascii('YWJj'))
 ```
+
+# Bài 3<br>
+Quẳng bừa vào [kt.gy](https://kt.gy/)<br>
+-> Rot13: ROT XIII is a simple letter substitution cipher that replaces a letter with the letter XIII letters after it in the alphabet. ROT XIII is an example of the Caesar cipher, developed in ancient Rome. Flag is FLAGSwzgxBJSAMqwxxAU. Insert an underscore immediately after FLAG.<br>
+-> flag: **FLAG_SwzgxBJSAMqwxxAU**<br>
+
