@@ -71,5 +71,21 @@ print(b64_to_ascii('YWJj'))
 # Bài 3<br>
 Quẳng bừa vào [kt.gy](https://kt.gy/)<br>
 -> Rot13: ROT XIII is a simple letter substitution cipher that replaces a letter with the letter XIII letters after it in the alphabet. ROT XIII is an example of the Caesar cipher, developed in ancient Rome. Flag is FLAGSwzgxBJSAMqwxxAU. Insert an underscore immediately after FLAG.<br>
--> flag: **FLAG_SwzgxBJSAMqwxxAU**<br>
+-> Flag: **FLAG_SwzgxBJSAMqwxxAU**<br>
 
+# Bài 4<br>
+Phân tích qua bằng code thì đoạn cipher gồm A-Za-z0-9<br>
+-> Nghi ngờ là B64 -> Quẳng [kt.gy](https://kt.gy/)<br>
+Kết quả lại là 1 cục tương tự thế, nhưng ngắn hơn tẹo<br>
+-> Nghi ngờ là encode B64 nhiều lần -> Quẳng [kt.gy](https://kt.gy/) tiếp<br>
+... Sau 1 số lần ... Xuất hiện ký tự '=' ở cuối
+-> Sure là encode B64 nhiều lần -> Quẳng [kt.gy](https://kt.gy/) tiếp<br>
+Sau **vô số** lần thì đoạn B64 co ngắn về còn:<br>
+> YmVnaW4gNjY2IDxkYXRhPgo1MURRITFVXSY5NFFHNCMtMzo0JTc5N0k3NCRBVQogCmVuZAo=<br>
+
+Decode tiếp phát cuối được:<br>
+> 51DQ!1U]&94QG4#-3:4%797I74$AU (bắt đầu với begin 666)
+
+Google "begin 666" thì được kết quả đó là UUencode -> UUdecode :3<br>
+Tool: [decode.urih.com](https://decode.urih.com/data/)<br>
+Flag: **FLAG_FeLgP3SiAWezWPHu**<br>
