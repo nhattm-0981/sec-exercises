@@ -8,14 +8,14 @@
 -> BNI= (B64) [kt.gy](https://kt.gy/)<br><br>
 
 # Bài 2
-* encode B64<br>
+* encode/decode B64<br>
 ```python
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789=~'
 
 def bin_to_dec(b):
     d = 0
     b = b[::-1]
-    for i in range(6):
+    for i in range(len(b)):
         d += pow(2, i) * (ord(b[i]) - 48)
     return d
 
@@ -33,6 +33,7 @@ def ascii_to_b64(s):
     b = ''
     for i in s:
         b += dec_to_bin(ord(i))
+    print(b)
     for i in range(0, len(b), 6):
         block = ''
         pad = ''
@@ -48,5 +49,21 @@ def ascii_to_b64(s):
         b64 += (alphabet[bin_to_dec(block)] + pad)
     return b64
 
+def b64_to_ascii(s):
+    b = ''
+    pads = 0
+    for i in s:
+        if (i == '.'):
+            pads += 1
+        else:
+            b += dec_to_bin(alphabet.index(i))[2:]
+    b = b[:len(b) - 2*pads]
+    print(b)
+    ascii = ''
+    for i in range(0, len(b), 8):
+        ascii += chr(bin_to_dec(b[i:i+8]))
+    return ascii
+
 print(ascii_to_b64('abc'))
+print(b64_to_ascii('YWJj'))
 ```
