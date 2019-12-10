@@ -19,13 +19,11 @@ def bin_to_dec(b):
         d += pow(2, i) * (ord(b[i]) - 48)
     return d
 
-def ascii_to_bin(s):
+def dec_to_bin(d):
     b = ''
-    for i in s:
-        a = ord(i)
-        while (a > 0):
-            b = chr((a % 2) + 48) + b
-            a = a // 2
+    while (d > 0):
+        b = chr((d % 2) + 48) + b
+        d = d // 2
     for i in range(8 - len(b) % 8):
         b = '0' + b
     return b
