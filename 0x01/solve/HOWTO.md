@@ -32,7 +32,7 @@ def ascii_to_b64(s):
     b64 = ''
     b = ''
     for i in s:
-        b += ascii_to_bin(i)
+        b += dec_to_bin(ord(i))
     for i in range(0, len(b), 6):
         block = ''
         pad = ''
