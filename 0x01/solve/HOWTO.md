@@ -89,3 +89,8 @@ Decode tiếp phát cuối được:<br>
 Google "begin 666" thì được kết quả đó là UUencode -> UUdecode :3<br>
 Tool: [decode.urih.com](https://decode.urih.com/data/)<br>
 Flag: **FLAG_FeLgP3SiAWezWPHu**<br>
+
+# Bài 5<br>
+Dễ thấy cipher gồm A-Z0-9 -> khalachackeo B32
+Quẳng [kt.gy](https://kt.gy/)<br>
+-> Flag: **matesctf{w3lc0m3_to_th3_f1n4l_r0und}**<br>
