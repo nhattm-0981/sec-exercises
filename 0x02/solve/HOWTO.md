@@ -25,5 +25,11 @@ Tuy nhiên, biểu thức trong if vẫn trả về **true**.
 
 Tận dụng lỗi này, có thể dùng burpsuite để bắt request lên server và đổi input thành mảng rồi gửi lên.<br>
 
+![bắt request](/0x02/solve/b2-1.png)
+
+![sửa request](/0x02/solve/b2-2.png)
+
+Click forward để gửi request đã sửa lên server.<br>
+Lúc này **strcasecmp($_POST['password'], $password) == 0** trả về true, s
 
 Flag: **FLAG_VQcTWEK7zZYzvLhX**
