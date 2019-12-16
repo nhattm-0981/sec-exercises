@@ -33,3 +33,9 @@ Click forward để gửi request đã sửa lên server.<br>
 Lúc này **strcasecmp($_POST['password'], $password) == 0** trả về true, s
 
 Flag: **FLAG_VQcTWEK7zZYzvLhX**
+
+# Bài 3
+
+
+
+Flag: **FLAG_uc8qVFa8Sr6DwYVP**
