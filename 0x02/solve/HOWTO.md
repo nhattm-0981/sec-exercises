@@ -36,6 +36,21 @@ Flag: **FLAG_VQcTWEK7zZYzvLhX**
 
 # Bài 3
 
+Đọc source code thấy được:
+- Biến **salt** chứa flag
+- Mỗi khi ấn submit thì sẽ random từ 0 ~ 9
+- Con số random được sẽ được nối thêm vào cookie ship, đi kèm 1 dấu ',' ở trước
+- Server tính giá trị cookie signature bằng cách Hash(salt||cookie)
+- Trước khi in ra danh sách các tàu, server sẽ kiểm tra lại xem Hash(salt||cookie) === signature hay không
+- Nếu đúng thì sẽ in ra danh sách các tàu
+
+Để ý thấy nếu in ra tùa yamato, tương đương với trong cookie phải có số 10. 
+Nhưng server chỉ random các tàu 0 ~ 9 mà thôi.<br>
+=> Cần tìm cách chèn thêm ",10" vào cookie, đồng thời tính đc signature = Hash(salt||ship||",10") rồi gửi request lên server.
+
+Ở đây server sử dụng thuật toán kiểm tra MAC, thuật toán này có thể vượt qua bằng cách sử dụng kỹ thuật
+Hash Length Extension Attack với tool HashPump.
+
 
 
 Flag: **FLAG_uc8qVFa8Sr6DwYVP**
