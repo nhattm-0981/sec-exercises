@@ -51,6 +51,15 @@ Nhưng server chỉ random các tàu 0 ~ 9 mà thôi.<br>
 Ở đây server sử dụng thuật toán kiểm tra MAC, thuật toán này có thể vượt qua bằng cách sử dụng kỹ thuật
 Hash Length Extension Attack với tool HashPump.
 
-
+![](./kan1.png)
+-> gacha 1 lần để lấy data và signature <-
+![](./kan2.png)
+-> chạy tool HashPump để ra data chứa ",10" và signature mới <-
+![](./kan3.png)
+-> encode html trước khi gửi request lên <-
+![](./kan4.png)
+-> gacha lần nữa, bắt request và sửa cookie <-
+![](./kan5.png)
+-> forward lên ta được flag <-
 
 Flag: **FLAG_uc8qVFa8Sr6DwYVP**
