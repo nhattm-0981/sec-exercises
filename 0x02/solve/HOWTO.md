@@ -63,3 +63,12 @@ gacha lần nữa, bắt request và sửa cookie
 forward lên ta được flag
 
 Flag: **FLAG_uc8qVFa8Sr6DwYVP**
+
+# Bài 4
+Đọc source code thấy ngay được server sử dụng DB sqlite. 
+
+Có vị trí server lưu DB rồi thì chỉ cần truy cập thẳng DB - *~/q/35/database.db* để lấy danh sách account là đc.
+
+Sau khi cài DB Browser for SQLite và mở lên thấy ngay account root:FLAG_iySDmApNegJvwmxN
+
+Flag: **FLAG_iySDmApNegJvwmxN**
