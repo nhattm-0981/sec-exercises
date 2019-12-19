@@ -34,7 +34,7 @@
   - [ ] Ex 1
   - [ ] Ex 2
   - [ ] Ex 3
-  - [ ] Ex 4
+  - [x] Ex 4
 - [ ] [0x05 - SQli](0x05)
   - [ ] Ex 1
 - [ ] [0x06 - One-Time Pad + RNG](0x06)
